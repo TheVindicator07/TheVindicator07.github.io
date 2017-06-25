@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home</title>
+
+  <style type="text/css">
+    body {
+     min-height: 400px;
+     margin-bottom: 100px;
+     clear: both;
+   }
+
+   #NZ {
+    position: relative;
+    right: 30px;
+    font: 400 50px/1.3 'Oleo Script', Helvetica, sans-serif;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    bottom: 20px;
+
+  }
+
+  #NZ:hover {
+    color: #618ed8;
+  }
+
+  #NZL {
+    color: white;
+  }
+
+  #NZL:hover {
+    color: #618ed8;
+  }
+
+  .fa {
+    right: 30px;
+    position: relative;
+    top: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 7.5px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  .fa:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    color: white;
+  }
+
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  #myBtn {
+    display: none; 
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 15px;
+    height: 30px;
+    width: 40px;
+    border: none; 
+    outline: none; 
+    background-color: white;
+    color: grey; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 30%; 
+
+  }
+
+  #myBtn p {
+    position: relative;
+    bottom: 10px;
+    right: 7.5px;
+  }
+
+  #myBtn:hover {
+    background-color: #618ed8;
+    color: white; 
+  }
+
+  #navtop {
+
+    border-radius: 0%;
+    margin-bottom: 0;
+  }
+
+  #pagefooter {
+    overflow: auto;
+  }
+
+
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+
+
+
+
+</head>
+<body>
+
+
+  <div id="navtop" class="navbar navbar-default navbar-auto-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="file:///C:/Users/John/Desktop/Assessment%203/home.html" class="navbar-brand" id="NZ">NewZealand</a>
+      </div>
+
+      <div class="collpase navbar-collapse" >
+        <ul style="float: right;" class="nav navbar-nav" >
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/history.html">History</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Map.html">Map</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Attractions.html">Attractions</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Upcoming%20Events.html">Upcoming Events</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Contact%20Us.html">Contact Us</a></li>
+        </ul>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <h1 style="
+      font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+      color: #2b2b2b;
+      text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+      text-align: center;" 
+      >Home</h1>
+    </div>
+  </div>
+
+  <footer id="pagefooter">
+    <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+      <div class="container">
+        <a href="https://www.facebook.com/purenewzealand/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/PureNewZealand" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/purenewzealand/" class="fa fa-instagram"></a>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><p>Top</p></button>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+
+
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+  </script>
+
+
+  <script type="text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 4000);
+    }
+
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      x[slideIndex-1].style.display = "block"; 
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

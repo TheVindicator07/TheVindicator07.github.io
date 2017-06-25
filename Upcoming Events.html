@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="Icon.png">
+
+  <title>Upcoming Events</title>
+
+  <style type="text/css">
+    body {
+     min-height: 400px;
+     margin-bottom: 100px;
+     clear: both;
+     background-image: url(Back.gif);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-attachment: fixed;
+   }
+
+   #NZ {
+    position: relative;
+    right: 30px;
+    font: 400 50px/1.3 'Oleo Script', Helvetica, sans-serif;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    bottom: 20px;
+
+  }
+
+  #NZ:hover {
+    color: #618ed8;
+  }
+
+  #NZL {
+    color: white;
+  }
+
+  #NZL:hover {
+    color: #618ed8;
+  }
+
+  .fa {
+    right: 30px;
+    position: relative;
+    top: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 7.5px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  .fa:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    color: white;
+  }
+
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  #myBtn {
+    display: none; 
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 15px;
+    height: 30px;
+    width: 40px;
+    border: none; 
+    outline: none; 
+    background-color: white;
+    color: grey; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+
+  }
+
+  #myBtn p {
+    position: relative;
+    bottom: 11px;
+    right: 7.5px;
+  }
+
+  #myBtn:hover {
+    background-color: #618ed8;
+    color: white; 
+  }
+
+  #navtop {
+
+    border-radius: 0%;
+    margin-bottom: 0;
+  }
+
+  #pagefooter {
+    overflow: auto;
+
+  }
+
+  .Event1 {
+    float: left;
+    padding-left: 10px;
+    height: 600px;
+    width: 560px;
+    margin: auto;
+  }
+
+  .Event1 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+  .Event2 {
+    float: right;
+    padding-right: 20px;
+    height: 600px;
+    width: 560px;  
+    margin: auto;
+  }
+
+  .Event2 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+    .Event3 {
+    float: left;
+    padding-left: 10px;
+    height: 600px;
+    width: 560px;
+    margin: auto;
+  }
+
+  .Event3 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+    .Event4 {
+    float: right;
+    padding-right: 20px;
+    height: 600px;
+    width: 560px;  
+    margin: auto;
+  }
+
+  .Event4 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+      .Event5 {
+    float: left;
+    padding-left: 10px;
+    height: 600px;
+    width: 560px;
+    margin: auto;
+  }
+
+  .Event5 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+      .Event6 {
+    float: right;
+    padding-right: 20px;
+    height: 600px;
+    width: 560px;  
+    margin: auto;
+  }
+
+  .Event6 img:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 355px;
+    width: 560px;  
+  }
+
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+
+
+
+
+</head>
+<body>
+
+
+  <div id="navtop" class="navbar navbar-default navbar-auto-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="file:///C:/Users/John/Desktop/Assessment%203/home.html" class="navbar-brand" id="NZ">NewZealand</a>
+      </div>
+
+      <div class="collpase navbar-collapse" >
+        <ul style="float: right;" class="nav navbar-nav" >
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/home.html">Home</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/history.html">History</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Map.html">Map</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Attractions.html">Attractions</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Contact%20Us.html">Contact Us</a></li>
+        </ul>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <h1 style="
+      font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+      color: #2b2b2b;
+      text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+      text-align: center;" 
+      >Upcoming Events</h1>
+    </div>
+  </div>
+
+
+  <div class="Event1">
+    <h1 style="text-align: center;">Rugby League World Cup</h1>
+    <p style="text-align: center;">When: 27 October - 2 December 2017 <br> Where: New Zealand & Australia</p>
+    <a href="http://www.rlwc2017.com/" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="Kiwis.jpg" height="350px" width="550"></a>
+  </div>
+
+
+<div class="Event2">
+  <h1 style="text-align: center;">Lake Taupo Cycle Challenge</h1>
+  <p style="text-align: center;">When: 25 November <br> Where: Taupo</p>
+  <a href="http://cyclechallenge.com/" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="Taupocycle.jpg" height="350px" width="550"></a>
+</div>
+
+
+<div class="Event3">
+  <h1 style="text-align: center;">Spend The Night With Alice Cooper</h1>
+  <p style="text-align: center;">When: Friday 27 October & Saturday 28 October<br> Where: Trusts Arena, Auckland (27th) TSB Bank Arena, Wellington (28th)</p>
+  <a href="https://premier.ticketek.co.nz/shows/show.aspx?sh=ALICECOO17" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="AliceCooper.jpg" height="350px" width="550"></a>
+</div>
+
+<div class="Event4">
+  <h1 style="text-align: center;">Ariana Grande: Dangerous Woman Tour</h1>
+  <p style="text-align: center;">When: Saturday 2 September<br> Where: Spark (formerly Vector) Arena, Auckland</p>
+  <a href="https://www.sparkarena.co.nz/ariana-grande/" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="Ariana.jpg" height="350px" width="550"></a>
+</div>
+
+
+<div class="Event5">
+  <h1 style="text-align: center;">Bruno Mars: 24K Magic World Tour</h1>
+  <p style="text-align: center;">When: February 27 2018 - March 3 2018<br> Where: Spark (formerly Vector) Arena, Auckland</p>
+  <a href="https://www.sparkarena.co.nz/bruno-mars-2018/" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="Bruno.jpg" height="350px" width="550"></a>
+</div>
+
+<div class="Event6">
+  <h1 style="text-align: center;">Ed Sheeran: Live in New Zealand 2018</h1>
+  <p style="text-align: center;">When: March 29 2018 - April 1 2018<br> Where: Forsyth Barr Stadium, Dunedin</p>
+  <a href="https://www.eventfinda.co.nz/2018/ed-sheeran/dunedin" target="_blank"> <img style="display: block; margin-left: auto; margin-right: auto; border-radius: 4px;"  src="Ed.jpg" height="350px" width="550"></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <footer id="pagefooter">
+    <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+      <div class="container">
+        <a href="https://www.facebook.com/purenewzealand/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/PureNewZealand" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/purenewzealand/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><p>Top</p></button>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+
+
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+  </script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="Icon.png">
+  <title>Contact Us</title>
+
+  <style type="text/css">
+    body {
+      min-height: 400px;
+      margin-bottom: 100px;
+      clear: both;
+     background-image: url(Back.gif);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-attachment: fixed;      
+    }
+
+    #NZ {
+      position: relative;
+      right: 30px;
+      font: 400 50px/1.3 'Oleo Script', Helvetica, sans-serif;
+      color: white;
+      text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+      bottom: 20px;
+
+    }
+
+    #NZ:hover {
+      color: #618ed8;
+    }
+
+    #NZL {
+      color: white;
+    }
+
+    #NZL:hover {
+      color: #618ed8;
+    }
+
+    .fa {
+      right: 30px;
+      position: relative;
+      top: 15px;
+      border-radius: 50%;
+      font-size: 30px;
+      padding: 7.5px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+
+    .fa:hover {
+      text-decoration: none;
+      opacity: 0.7;
+      color: white;
+    }
+
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    #myBtn {
+      display: none; 
+      position: relative;
+      float: right;
+      right: 100px;
+      bottom: 15px;
+      height: 30px;
+      width: 40px;
+      border: none; 
+      outline: none; 
+      background-color: white;
+      color: grey; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 10px; 
+
+    }
+
+    #myBtn p {
+      position: relative;
+      bottom: 11px;
+      right: 7.5px;
+    }
+
+    #myBtn:hover {
+      background-color: #618ed8;
+      color: white; 
+    }
+
+    #navtop {
+
+      border-radius: 0%;
+      margin-bottom: 0;
+    }
+
+    #pagefooter {
+      overflow: auto;
+
+    }
+
+    #contactform {
+      border-radius: 5px;
+      background-color: #2b2b2b;
+      padding: 20px;
+      margin-bottom: 100px;
+    }
+
+    form label{
+      color: white;
+    }
+
+    input[type=email], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=text], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: white;
+      color: #2b2b2b;
+      padding: 12px 20px;
+      margin-top: 6px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #618ed8;
+      color: white;
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+
+
+
+
+</head>
+<body>
+
+
+  <div id="navtop" class="navbar navbar-default navbar-auto-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="file:///C:/Users/John/Desktop/Assessment%203/home.html" class="navbar-brand" id="NZ">NewZealand</a>
+      </div>
+
+      <div class="collpase navbar-collapse" >
+        <ul style="float: right;" class="nav navbar-nav" >
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/home.html">Home</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/history.html">History</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Map.html">Map</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Attractions.html">Attractions</a></li>
+          <li ><a id="NZL" href="file:///C:/Users/John/Desktop/Assessment%203/Upcoming%20Events.html">Upcoming Events</a></li>
+        </ul>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <h1 style="
+      font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+      color: #2b2b2b;
+      text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+      text-align: center;" 
+      >Contact Us</h1>
+    </div>
+  </div>
+
+  <div class="container" id="contactform">
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email Address...">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="What you you like to ask/tell us?" style="height: 200px;"></textarea>
+
+      <input type="submit" value="submit">
+    </form>
+  </div>
+
+  <footer id="pagefooter">
+    <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+      <div class="container">
+        <a href="https://www.facebook.com/purenewzealand/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/PureNewZealand" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/purenewzealand/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><p>Top</p></button>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+
+
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+  </script>
+
+<script type="text/javascript">
+  
+  function Alert(argument) {
+    // body...
+  }
+</script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
